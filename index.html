@@ -141,7 +141,7 @@ function rotateMap( tiltLR, tiltFB, dir ){
   */
   rotateX( tiltFB );
   rotateY( dir );
-  rotateZ( tiltLR );
+  rotateZ( -1 * tiltLR );
   $('#me').html( Math.floor( tiltFB ) + ',' + Math.floor( dir ) + ',' + Math.floor( tiltLR ) );
 }
 
